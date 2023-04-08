@@ -1,0 +1,440 @@
+body {
+	margin: 0 0 0 0;
+}
+h5 {
+	font-family: "Lilita One", cursive;
+	font-size: 3rem;
+}
+
+img:hover {
+	transform: scale(105%);
+}
+
+.card {
+	text-align: center;
+	height: 60%;
+	width: 60%;
+	padding: auto;
+	margin: 9% auto;
+	border-radius: 20px;
+	background: #d8dcd7;
+	z-index: 34;
+	position: relative;
+}
+
+.card-title {
+	margin-top: 10%;
+}
+
+.inputText {
+	width: 80%;
+	height: 40px;
+	margin-top: 5%;
+	font-family: "Lilita One";
+	font-size: 1.5rem;
+	color: rgb(119, 117, 117);
+	text-align: center;
+	border-radius: 20px;
+	border-color: #071204;
+}
+
+.card-img-bottom {
+	width: 30%;
+	margin: auto;
+	padding-bottom: 10%;
+}
+
+.btn {
+	margin: 5% auto;
+	background-color: rgb(198, 159, 52);
+	width: 40%;
+	height: 50px;
+	border-radius: 20px;
+	font-family: "Lilita One", cursive;
+	font-size: 1.5rem;
+
+	border-color: white;
+}
+
+.btn:hover {
+	background-color: rgb(50, 71, 71);
+	transform: scale(110%);
+}
+
+.ciel,
+.soleil,
+.lune,
+.etoile span {
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.ciel {
+	height: 100vh;
+	background-color: #72627c;
+	animation-name: jourNuit;
+}
+.soleil {
+	width: 100px;
+	height: 100px;
+	background-color: #f39f18;
+	border-radius: 50%;
+	position: absolute;
+	top: 70%;
+	left: 10%;
+	box-shadow: 0px 0px 52px 2px rgba(255, 170, 0, 1);
+	animation-name: jour;
+	z-index: 2;
+}
+
+.lune {
+	width: 100px;
+	height: 100px;
+	background-color: #f4fefe;
+	border-radius: 50%;
+	position: absolute;
+	top: 70%;
+	left: 80%;
+	box-shadow: 0px 0px 30px 0px rgba(250, 250, 250, 1);
+	animation-name: nuit;
+	z-index: 2;
+}
+
+.etoile span {
+	color: #72627c;
+	position: absolute;
+	z-index: 1;
+	animation-name: etoile;
+}
+.etoile span:first-child {
+	top: 10%;
+	left: 20%;
+}
+.etoile span:nth-child(2) {
+	top: 20%;
+	left: 30%;
+}
+.etoile span:nth-child(3) {
+	top: 40%;
+	left: 35%;
+}
+.etoile span:nth-child(4) {
+	top: 15%;
+	left: 10%;
+}
+.etoile span:nth-child(5) {
+	top: 40%;
+	left: 4%;
+}
+.etoile span:nth-child(6) {
+	top: 35%;
+	left: 24%;
+}
+.etoile span:nth-child(7) {
+	top: 20%;
+	left: 50%;
+}
+.etoile span:nth-child(8) {
+	top: 35%;
+	left: 45%;
+}
+.etoile span:nth-child(9) {
+	top: 10%;
+	left: 42%;
+}
+.etoile span:nth-child(10) {
+	top: 40%;
+	left: 60%;
+}
+.etoile span:nth-child(11) {
+	top: 35%;
+	left: 58%;
+}
+.etoile span:nth-child(12) {
+	top: 7%;
+	left: 68%;
+}
+.etoile span:nth-child(13) {
+	top: 25%;
+	left: 72%;
+}
+.etoile span:nth-child(14) {
+	top: 20%;
+	left: 78%;
+}
+.etoile span:nth-child(15) {
+	top: 35%;
+	left: 75%;
+}
+.etoile span:nth-child(16) {
+	top: 30%;
+	left: 90%;
+}
+.etoile span:nth-child(17) {
+	top: 2%;
+	left: 89%;
+}
+.etoile span:nth-child(18) {
+	top: 24%;
+	left: 95%;
+}
+.etoile span:nth-child(19) {
+	top: 12%;
+	left: 92%;
+}
+.etoile span:nth-child(20) {
+	top: 18%;
+	left: 65%;
+}
+.etoile span:nth-child(21) {
+	top: 12%;
+	left: 60%;
+}
+.etoile span:nth-child(22) {
+	top: 5%;
+	left: 75%;
+}
+.etoile span:nth-child(23) {
+	top: 20%;
+	left: 8%;
+}
+.etoile span:nth-child(24) {
+	top: 10%;
+	left: 5%;
+}
+.etoile span:nth-child(25) {
+	top: 28%;
+	left: 15%;
+}
+.etoile span:nth-child(26) {
+	top: 12%;
+	left: 32%;
+}
+.etoile span:nth-child(27) {
+	top: 2%;
+	left: 28%;
+}
+.etoile span:nth-child(28) {
+	top: 20%;
+	left: 38%;
+}
+.etoile span:nth-child(29) {
+	top: 8%;
+	left: 36%;
+}
+.etoile span:nth-child(30) {
+	top: 4%;
+	left: 48%;
+}
+.etoile span:nth-child(31) {
+	top: 30%;
+	left: 52%;
+}
+.etoile span:nth-child(32) {
+	top: 8%;
+	left: 55%;
+}
+.etoile span:last-child {
+	top: 15%;
+	left: 80%;
+}
+.terre {
+	height: 20vh;
+	background-color: #3a9d23;
+	position: relative;
+	top: 80vh;
+	animation-name: verdure;
+	z-index: 3;
+}
+
+@keyframes jourNuit {
+	0% {
+		background-color: #72627c;
+	} /*lever soleil*/
+	10% {
+		background-color: #e9ad88;
+	}
+	20% {
+		background-color: #7a9eb6;
+	}
+	30% {
+		background-color: #77b5fe;
+	}
+	40% {
+		background-color: #cc763f;
+	}
+	50% {
+		background-color: #e06632;
+	} /*coucher soleil*/
+	60% {
+		background-color: #75423c;
+	} /*début nuit*/
+	70% {
+		background-color: #331c1a;
+	}
+	80% {
+		background-color: #000000;
+	}
+	90% {
+		background-color: #000000;
+	}
+	100% {
+		background-color: #463d4c;
+	} /*fin nuit*/
+}
+@keyframes jour {
+	0% {
+		top: 70%;
+		left: 10%;
+		background-color: #f39f18;
+		box-shadow: 0px 0px 52px 2px rgba(255, 170, 0, 1);
+	} /*lever soleil*/
+	10% {
+		top: 40%;
+		background-color: #f3f990;
+		box-shadow: 0px 0px 40px 18px rgba(245, 233, 95, 1);
+	}
+	20% {
+		top: 20%;
+		background-color: F3F9D2;
+		box-shadow: 0px 0px 35px 8px rgba(250, 241, 147, 1);
+	}
+	30% {
+		top: 30%;
+		left: 50%;
+		background-color: F3F9D2;
+		box-shadow: 0px 0px 100px 20px rgba(250, 241, 147, 1);
+	}
+	40% {
+		top: 50%;
+		background-color: #f3f990;
+		box-shadow: 0px 0px 52px 14px rgba(245, 233, 95, 1);
+	}
+	50% {
+		top: 70%;
+		left: 70%;
+		background-color: #f39f18;
+		box-shadow: 0px 0px 70px 2px rgba(250, 115, 42, 1);
+	} /*coucher soleil*/
+	60% {
+		top: 80%;
+		left: 80%;
+		box-shadow: 0px 0px 0px 0px rgba(250, 115, 42, 1);
+	} /*début nuit*/
+	90% {
+		top: 80%;
+		box-shadow: 0px 0px 0px 0px rgba(250, 115, 42, 1);
+	}
+	100% {
+		top: 80%;
+		left: 10%;
+		background-color: #f39f18;
+		box-shadow: 0px 0px 0px 2px rgba(255, 170, 0, 1);
+	} /*fin nuit*/
+}
+
+@keyframes nuit {
+	0% {
+		top: 80%;
+		left: 80%;
+		box-shadow: 0px 0px 0px 0px rgba(250, 250, 250, 1);
+	} /*lever soleil*/
+	50% {
+		top: 80%;
+		left: 10%;
+		box-shadow: 0px 0px 0px 0px rgba(250, 250, 250, 1);
+	} /*coucher soleil*/
+	60% {
+		top: 40%;
+		box-shadow: 0px 0px 50px 5px rgba(250, 250, 250, 1);
+	} /*début nuit*/
+	70% {
+		top: 20%;
+		box-shadow: 0px 0px 30px 12px rgba(250, 250, 250, 1);
+	}
+	80% {
+		top: 30%;
+		left: 50%;
+		box-shadow: 0px 0px 100px 18px rgba(250, 250, 250, 1);
+	}
+	90% {
+		top: 50%;
+		box-shadow: 0px 0px 75px 12px rgba(250, 250, 250, 1);
+	}
+	100% {
+		top: 80%;
+		left: 80%;
+		box-shadow: 0px 0px 20px 0px rgba(250, 250, 250, 1);
+	} /*fin nuit*/
+}
+
+@keyframes verdure {
+	0% {
+		background-color: #608e69;
+	} /*lever soleil*/
+	10% {
+		background-color: #5a9d59;
+	}
+	20% {
+		background-color: #3a9d23;
+	}
+	30% {
+		background-color: #3a9d23;
+	}
+	40% {
+		background-color: #8a9323;
+	}
+	50% {
+		background-color: #585713;
+	} /*coucher soleil*/
+	60% {
+		background-color: #3d3d0d;
+	} /*début nuit*/
+	70% {
+		background-color: #071204;
+	}
+	80% {
+		background-color: #071204;
+	}
+	90% {
+		background-color: #071204;
+	}
+	100% {
+		background-color: #608e69;
+	} /*fin nuit*/
+}
+@keyframes etoile {
+	0% {
+		color: #72627c;
+	} /*lever soleil*/
+	10% {
+		color: #e9ad88;
+	}
+	20% {
+		color: #7a9eb6;
+	}
+	30% {
+		color: #77b5fe;
+	}
+	40% {
+		color: #cc763f;
+	}
+	50% {
+		color: #e06632;
+	} /*coucher soleil*/
+	60% {
+		color: #efd242;
+	} /*début nuit*/
+	70% {
+		color: #efe7b6;
+	}
+	80% {
+		color: #efd242;
+	}
+	90% {
+		color: EFE7B6;
+	}
+	100% {
+		color: #463d4c;
+	} /*fin nuit*/
+} ;
