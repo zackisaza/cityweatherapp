@@ -5,6 +5,12 @@ h5 {
 	font-family: "Lilita One", cursive;
 	font-size: 3rem;
 }
+h2 {
+	font-family: "Lilita One", cursive;
+	font-size: 3rem;
+	color: rgb(119, 117, 117);
+	padding-top: 5%;
+}
 
 img:hover {
 	transform: scale(105%);

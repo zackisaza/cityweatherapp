@@ -18,23 +18,33 @@
 
 <body class="ciel">
 
+
     <div class="soleil"></div>
     <div class="container">
         <div class="card card">
             <div class="card-body">
-                <h5 class="card-title">Enter your city below</h5>
+                <h5 class="card-title">
+                    <%=city%>
+                </h5>
                 <p class="card-text">
-                <form action="/" method="post">
-                    <input class="inputText" id="cityInput" type="text" name="city">
-                    <br>
-                    <button class="btn btn-outline-dark" type="submit">Go</button>
+
+                <h2 class="description">
+                    <%=cityTemperature%> °C
+                </h2>
+                <h2 class="description">
+                    <%=cityDescription%>
+                </h2>
+                <br>
+                <form action="/weather" method="post">
+                    <button class="btn btn-outline-dark" type="submit">Select other city</button>
                 </form>
                 </p>
 
             </div>
-            <img src="/images/weather.png" class="card-img-bottom" alt="..."> %>
+            <img src="<%=cityIcon%>" class="card-img-bottom" alt="..."> %>
         </div>
     </div>
+
 
 
 
